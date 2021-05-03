@@ -1,0 +1,5 @@
+/config/parameters.yaml
+/build/
+.idea
+*.exe
+/sentinel-proxy
