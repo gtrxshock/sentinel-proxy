@@ -74,11 +74,16 @@ func (proxy SentinelProxy) serve() error {
 				if err != nil {
 					proxy.Logger.Error("connect to sentinels error: ", err)
 					_ = clientConn.Close()
+
+					continue
 				}
 
 				redisConn, err := redisConnector.Connect(redisAddr)
 				if err != nil {
+					proxy.Logger.Error("connect to redis error: ", err)
 					_ = clientConn.Close()
+
+					continue
 				}
 
 				proxyBridge.Proxy(clientConn, redisConn)

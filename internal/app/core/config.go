@@ -24,7 +24,7 @@ var config *Config
 
 func NewConfig(configPath string) (*Config, error) {
 	cfg := &Config{
-		RequestTimeout: 15,
+		RequestTimeout: 5,
 	}
 
 	f, err := os.Open(configPath)
