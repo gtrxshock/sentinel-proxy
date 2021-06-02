@@ -2,7 +2,7 @@ package core
 
 import (
 	"fmt"
-	graylog "github.com/gemnasium/logrus-graylog-hook"
+	graylog "github.com/gemnasium/logrus-graylog-hook/v3"
 	"github.com/sirupsen/logrus"
 	"os"
 )

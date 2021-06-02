@@ -3,8 +3,7 @@ module github.com/gtrxshock/sentinel-proxy
 go 1.14
 
 require (
-	github.com/gemnasium/logrus-graylog-hook v2.0.7+incompatible
-	github.com/go-redis/redis v6.15.9+incompatible // indirect
+	github.com/gemnasium/logrus-graylog-hook/v3 v3.0.3
 	github.com/go-redis/redis/v8 v8.8.0
 	github.com/go-yaml/yaml v2.1.0+incompatible
 	github.com/onsi/ginkgo v1.16.1 // indirect
